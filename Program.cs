@@ -11,14 +11,14 @@
 Console.Write("Введите размер вашего массива: ");
 int size = int.Parse(Console.ReadLine());
 
-string[] array = Enter(size);
+string[] array = GetMassive(size);
 Console.WriteLine($"Ваш заданный массив: [{String.Join(" ", array)}]");
 
 string[] arrayShort = CheckElement(size);
 Console.WriteLine($"Все элементы массива меньше 3х символов: [{String.Join(" ", arrayShort)}]");
 
 
-string[] Enter(int size)
+string[] GetMassive(int size)
 {
     string[] array = new string[size];
     for (int i = 0; i < size; i++)
